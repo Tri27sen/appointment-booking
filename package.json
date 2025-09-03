@@ -1,0 +1,49 @@
+{
+  "name": "appointment-booking-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:e2e": "jest tests/e2e/",
+    "test:e2e:watch": "jest --watch tests/e2e/",
+    "test:coverage": "jest --coverage",
+    "test:auth": "jest tests/e2e/auth.test.js",
+    "test:appointments": "jest tests/e2e/appointments.test.js",
+    "test:integration": "jest tests/e2e/integration.test.js",
+    "test:performance": "jest tests/e2e/performance.test.js",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "appointment",
+    "booking",
+    "jwt",
+    "api",
+    "e2e-testing",
+    "integration-testing"
+  ],
+  "author": "TRISHA SENGUPTA",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.19.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.1.3",
+    "jest-environment-node": "^30.1.2",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.4"
+  }
+}

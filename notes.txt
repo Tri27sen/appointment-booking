@@ -1,0 +1,15 @@
+{"username":"prof","password":"password123456","role":"student"}
+{"username":"prof3","password":"password12345","role":"professor"}
+
+
+http://localhost:3000/api/availability
+{
+  "timeSlots": [
+    { "startTime": "10:00", "endTime": "11:00" },
+    { "startTime": "11:00", "endTime": "12:00" }
+  ]
+}
+
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGI4NjlkODNiZjdlODBjYTU0OWU4ZGQiLCJ1c2VybmFtZSI6InByb2Y0Iiwicm9sZSI6InByb2Zlc3NvciIsImlhdCI6MTc1NjkxNzQwOSwiZXhwIjoxNzU3MDAzODA5fQ.BzZdwmdrlPLp5HNjpIGQDxeg7eqLJ8DvLDTaY0GAi6U -> login 
+
+{"username":"stud2","password":"password12345","role":"student"}

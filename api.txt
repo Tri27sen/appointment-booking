@@ -1,0 +1,71 @@
+Register professor & student.
+Login as professor → set availability.
+Login as student → view professor availability.
+Student books appointment.
+Student/professor cancels appointment.
+Check my-appointments for history
+
+http://localhost:3000/api/auth/register
+ student 
+ professor 
+
+ 2. http://localhost:3000/api/auth/login
+  save : Bearer token 
+
+  3.http://localhost:3000/api/availability
+professor only -> Bearer token 
+
+
+4.http://localhost:3000/api/availability/professors/<professorId>
+GET 
+for students to view professor slots
+
+5. http://localhost:3000/api/appointments
+Authorization: Bearer <JWT_TOKEN> (student token)
+{
+  "availabilityId": "<availabilityId>"
+}
+
+6.http://localhost:3000/api/appointments/my-appointments
+student  , use get 
+
+
+
+http://localhost:3000/api/appointments/<appointmentId>
+
+
+{
+  "timeSlots": [
+    { "startTime": "10:00", "endTime": "11:00" },
+    { "startTime": "11:00", "endTime": "12:00" }
+  ]
+}
+
+
+
+
+
+
+{"username":"prof12","password":"password123456","role":"professor"}
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGI4N2FlZDkwZmRkZjQ4MzA4MzM4OGQiLCJ1c2VybmFtZSI6InByb2YxMiIsInJvbGUiOiJwcm9mZXNzb3IiLCJpYXQiOjE3NTY5MjA1NzMsImV4cCI6MTc1NzAwNjk3M30.B70LP9F1BAmZrsur6typQ2OGe2ThT06TVSUL3ObMMy0",
+    "user": {
+        "id": "68b87aed90fddf483083388d",
+        "username": "prof12",
+        "role": "professor"
+    }
+}
+
+"availabilityId": "68b87c1990fddf483083388f"
+
+
+student 
+{"username":"student12","password":"password123456","role":"student"}
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGI4N2IyYzkwZmRkZjQ4MzA4MzM4OGUiLCJ1c2VybmFtZSI6InN0dWRlbnQxMiIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNzU2OTIwNjM0LCJleHAiOjE3NTcwMDcwMzR9.4iTue3Jh0jvLVhkfLDXQ6B3EAsSq30O3WfWrK1xomH8",
+    "user": {
+        "id": "68b87b2c90fddf483083388e",
+        "username": "student12",
+        "role": "student"
+    }
+}
